@@ -33,9 +33,13 @@ public int testesub(@PathVariable int numUm, @PathVariable int numDois){
     }
 
 @GetMapping("/api/teste/parOuImpar/{numUm}")
-public int testeparimpar(@PathVariable int numUm,){
-    
-    if ()
+public String testeparimpar(@PathVariable int numUm){
+    double resto = numUm % 2;
+    if (resto != 0) {
+        return "O número " + numUm + " é impar.";
+    } else {
+        return "O númrto " + numUm + "é par.";
+    }
 
     }
 }
