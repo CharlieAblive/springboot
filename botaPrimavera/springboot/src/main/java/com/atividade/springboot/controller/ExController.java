@@ -38,7 +38,7 @@ public String testeparimpar(@PathVariable int numUm){
     if (resto != 0) {
         return "O número " + numUm + " é impar.";
     } else {
-        return "O númrto " + numUm + "é par.";
+        return "O númrto " + numUm + " é par.";
     }
 
     }
