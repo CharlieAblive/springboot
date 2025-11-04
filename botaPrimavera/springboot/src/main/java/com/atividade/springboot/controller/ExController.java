@@ -30,6 +30,12 @@ public int testesoma(@PathVariable int numUm, @PathVariable int numDois){
 public int testesub(@PathVariable int numUm, @PathVariable int numDois){
     int sub = numUm - numDois;
     return sub;
+    }
+
+@GetMapping("/api/teste/parOuImpar/{numUm}")
+public int testeparimpar(@PathVariable int numUm,){
+    
+    if ()
 
     }
 }
